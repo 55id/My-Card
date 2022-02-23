@@ -80,13 +80,13 @@ select {
 
 @font-face {
 	font-family: "Gilroy Bold";
-	src: url("fonts/gilroy-bold.ttf") format("truetype");
+	src: url("../fonts/gilroy-bold.ttf") format("truetype");
 	font-style: normal;
 	font-weight: bold;
 }
 @font-face {
 	font-family: "Gilroy Medium";
-	src: url("fonts/gilroy-medium.ttf") format("truetype");
+	src: url("../fonts/gilroy-medium.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
