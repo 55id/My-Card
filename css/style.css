@@ -80,13 +80,13 @@ select {
 
 @font-face {
 	font-family: "Gilroy Bold";
-	src: url("/Portfolio/fonts/gilroy-bold.ttf") format("truetype");
+	src: url("../fonts/gilroy-bold.ttf") format("truetype");
 	font-style: normal;
 	font-weight: bold;
 }
 @font-face {
 	font-family: "Gilroy Medium";
-	src: url("/Portfolio/fonts/gilroy-medium.ttf") format("truetype");
+	src: url("../fonts/gilroy-medium.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
@@ -164,7 +164,7 @@ a:hover {
 	width: 100%;
 	height: 470px;
 
-	background: url(img/chel.JPG) 0 0 / 100% auto no-repeat;
+	background: url(../img/chel.JPG) 0 0 / 100% auto no-repeat;
 }
 .block__two {
 	background-color: #f6f6f6;
@@ -331,7 +331,7 @@ a:hover {
 		width: 100%;
 		height: 478px;
 
-		background: url(img/chel_min.jpg);
+		background: url(../img/chel_min.jpg);
 		background-repeat: no-repeat;
 		background-position: 50% 25%;
 	}
