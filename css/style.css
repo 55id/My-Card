@@ -1,0 +1,412 @@
+/* Обнуление */
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+	padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+	list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+	margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+@font-face {
+	font-family: "Gilroy Bold";
+	src: url("/Portfolio/fonts/gilroy-bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
+@font-face {
+	font-family: "Gilroy Medium";
+	src: url("/Portfolio/fonts/gilroy-medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+body {
+	font-family: "Gilroy Bold";
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+}
+
+A {
+	color: #828282; /* Цвет ссылок */
+}
+A:visited {
+	color: #828282; /* Цвет посещенных ссылок */
+}
+A:active {
+	color: #000; /* Цвет активных ссылок */
+}
+a:hover {
+	color: #000;
+	transform: scale(1.03);
+	transition-duration: 0.3s;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+.header__container {
+	max-width: 945px;
+	margin: 0 auto;
+	border-bottom: 1px solid #828282;
+}
+
+.menu__list {
+	height: 88px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.block__one {
+	max-width: 945px;
+	margin: 0 auto;
+	min-height: 676px;
+}
+.one__title-one {
+	margin-top: 40px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.title-one__name {
+	text-transform: uppercase;
+	font-size: 47.3392px;
+	line-height: 59px;
+	color: #070707;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	font-family: "Gilroy Medium";
+}
+
+.title-one__lang {
+	transform: rotate(-90deg);
+	margin-right: -20px;
+}
+.langu {
+	color: #828282;
+}
+.one__image {
+	width: 100%;
+	height: 470px;
+
+	background: url(/Portfolio/img/chel.JPG) 0 0 / 100% auto no-repeat;
+}
+.block__two {
+	background-color: #f6f6f6;
+}
+
+.block-two__container {
+	max-width: 945px;
+	min-height: 504px;
+	margin: 0 auto;
+}
+
+.two__title {
+	font-size: 34px;
+	line-height: 42px;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 17.3px;
+}
+
+.two-description__about {
+	max-width: 485px;
+	margin: 0 auto;
+}
+.two__description-1 {
+	text-align: center;
+	font-family: "Gilroy Medium";
+	font-size: 18px;
+	line-height: 22px;
+	padding-bottom: 49px;
+}
+.two__description-2 {
+	text-align: center;
+	font-family: "Gilroy Medium";
+	font-size: 18px;
+	line-height: 22px;
+	padding-bottom: 50px;
+}
+.two__description-3 {
+	text-align: center;
+	font-family: "Gilroy Medium";
+	font-size: 18px;
+	line-height: 22px;
+}
+
+@media (max-width: 1023px) {
+	.header__container {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	.block__one {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.block-two__container {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+
+@media (max-width: 767px) {
+	header {
+		width: 100%;
+	}
+
+	.one__title-one {
+		margin-top: 40px;
+		margin-bottom: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	.title-one__name {
+		padding-bottom: 23px;
+	}
+
+	.header__container {
+		border: none;
+	}
+	.title-one__lang {
+		display: none;
+	}
+
+	/* Гамбургер иконка */
+
+	.header__menu {
+		width: 100%;
+	}
+	.menu__list {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.list__item {
+		font-size: 34px;
+		margin-left: 26px;
+		margin-top: 20px;
+	}
+	.list__item:first-child {
+		margin-top: 55px;
+	}
+	.menu-btn {
+		width: 30px;
+		height: 30px;
+		position: relative;
+		top: 73.5px;
+		margin-left: auto;
+		margin-right: 0px;
+		z-index: 2;
+		overflow: hidden;
+	}
+
+	.menu-btn span {
+		width: 30px;
+		height: 2px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #000;
+		transition: all 0.5s;
+	}
+
+	.menu-btn span:nth-of-type(2) {
+		top: calc(50% - 5px);
+	}
+	.menu-btn span:nth-of-type(3) {
+		top: calc(50% + 5px);
+	}
+
+	/* Меняем гамбургер иконку, когда меню открыто */
+	.menu-btn.active span:nth-of-type(1) {
+		display: none;
+	}
+	.menu-btn.active span:nth-of-type(2) {
+		top: 50%;
+		transform: translate(-50%, 0%) rotate(45deg);
+	}
+	.menu-btn.active span:nth-of-type(3) {
+		top: 50%;
+		transform: translate(-50%, 0%) rotate(-45deg);
+	}
+
+	/* Меню, которое будет появляться */
+	.menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 15px;
+		background: #fff;
+		transform: translateX(-100%);
+		transition: transform 0.5s;
+	}
+
+	.menu.active {
+		transform: translateX(0);
+	}
+}
+
+@media (max-width: 520px) {
+	.one__image {
+		width: 100%;
+		height: 478px;
+
+		background: url(/Portfolio/img/chel_min.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+	}
+	.block__one {
+		min-height: 750px;
+	}
+}
+
+.block__three {
+	max-width: 945px;
+	margin: 0 auto;
+}
+.three__title {
+	text-align: center;
+	margin-top: 91px;
+	margin-bottom: 69px;
+	font-size: 34px;
+	line-height: 42px;
+}
+.three__description {
+	text-align: center;
+	margin-bottom: 83px;
+	font-size: 18px;
+	line-height: 22px;
+	font-family: "Gilroy Medium";
+}
+.three__item-container {
+	display: flex;
+	justify-content: space-between;
+}
+.three__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.item__title {
+	margin-top: 23px;
+	margin-bottom: 41px;
+	font-size: 14px;
+	line-height: 17px;
+	color: #828282;
+	max-width: 85px;
+	text-align: center;
+}
+.item__rank {
+	font-size: 35px;
+}
+
+@media (max-width: 1023px) {
+	.block__three {
+		margin-left: 6%;
+		margin-right: 6%;
+	}
+}
+@media (max-width: 767px) {
+	.three__item-container {
+		flex-direction: column;
+	}
+
+	.item__title {
+		margin-bottom: 10px;
+	}
+	.item__img {
+		margin-top: 60px;
+	}
+	.item__img:first-child {
+		margin-top: 20px;
+	}
+	.three__description {
+		margin-bottom: 40px;
+	}
+
+	.item__rank {
+		margin-bottom: 40px;
+	}
+}
