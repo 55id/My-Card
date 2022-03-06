@@ -381,7 +381,7 @@ a:hover {
 	text-align: center;
 }
 .item__rank {
-	font-size: 35px;
+	font-size: 18px;
 }
 
 @media (max-width: 1023px) {
@@ -410,5 +410,149 @@ a:hover {
 
 	.item__rank {
 		margin-bottom: 40px;
+	}
+}
+
+.block__four {
+	background-color: #f6f6f6;
+}
+.four__title {
+	padding-top: 112px;
+	font-size: 34px;
+	line-height: 42px;
+	text-align: center;
+}
+.four__variant-1 {
+	margin-top: 50px;
+}
+.variant-1__photo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.variant-1__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 45px;
+}
+
+.four__variant-2 {
+	margin-top: 100px;
+}
+.variant-2__photo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.variant-2__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 45px;
+}
+
+.four__variant-3 {
+	margin-top: 100px;
+	padding-bottom: 100px;
+}
+.variant-3__photo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.variant-3__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+@media (max-width: 1023px) {
+	.four__variant-1 {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.four__variant-2 {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.four__variant-3 {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.variant-3__link {
+		text-align: center;
+	}
+	.variant-2__link {
+		text-align: center;
+	}
+	.variant-1__link {
+		text-align: center;
+	}
+}
+
+.block__five {
+	margin-top: 115px;
+}
+.five__title {
+	font-size: 34px;
+	line-height: 42px;
+	text-align: center;
+}
+.five__subtitle {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 22px;
+	font-family: "Gilroy Medium";
+}
+.five__button {
+	background-color: #000;
+	height: 40px;
+	width: 180px;
+	border-radius: 40px;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 85px;
+}
+.five__social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social {
+	margin-right: 60px;
+}
+
+.buttonist {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.five__description {
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	font-family: "Gilroy Medium";
+	color: #828282;
+	margin-top: 45px;
+	padding-bottom: 90px;
+}
+
+@media (max-width: 1023px) {
+	.social {
+		margin-right: 35px;
+	}
+	.five__button {
+		width: 300px;
 	}
 }
